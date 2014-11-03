@@ -1,0 +1,14 @@
+﻿@model List<Shouts.Frontend.Models.Shouts.Shout>
+
+
+    @foreach (var shout in Model)
+    {
+        <div class="panel panel-primary">
+            <div class="panel-heading"><strong><a href="mailto:@shout.id" class="shoutId"> @shout.id </a></strong> shouted:<div class="pull-right">@shout.whenPosted</div></div>
+            <div class="panel-body">
+                @shout.content
+            </div>
+        </div>
+    }
+
+

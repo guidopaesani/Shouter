@@ -1,0 +1,71 @@
+﻿@using Shouts.Frontend.Models.Shouts;
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+
+    </head>
+    <body>
+        
+        <div class="row shoutPostpanel">
+            <div class="col-lg-12">
+                @using (Html.BeginForm("Post", "Shouts", FormMethod.Post))
+                {
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="shoutContent" name="shoutContent" class="form-control" placeholder="What do you feel like shouting?">
+                        <span class="input-group-btn">
+                            <button id="btnPostShout" class="btn btn-default" type="button">Shout!</button>
+                        </span>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="shoutList">
+                    @Html.Action("GetShoutList")
+                </div>
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </body>
+</html>
+
+<script>
+    $(document).ready(function () {
+
+        var getShouts = function () {
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetShoutList", "Shouts")',
+                success: function (data) {
+                    var parsedData = $.parseHTML(data, document, true);
+                    $('#shoutList').html(parsedData);
+                    $('#shoutContent').val("");
+                }
+            });
+        };
+
+        var postShout = function (newShout) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("Post", "Shouts")',
+                data: { 'newShoutContent': newShout },
+                dataType: "json",
+                complete: getShouts
+            });
+        }
+        $('#btnPostShout').click(function(e) {
+            e.preventDefault();
+
+            var newShoutContent = $('#shoutContent').val();
+            if (newShoutContent == "") return 0;
+            postShout(newShoutContent);
+
+        });
+    });
+</script>
+
+

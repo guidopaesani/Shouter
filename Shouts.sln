@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shouts.Frontend", "Shouts.Frontend\Shouts.Frontend.csproj", "{A19A8F77-C80F-4F37-9DAD-B5A5E974ADB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shouts.Domain", "Shouts.Domain\Shouts.Domain.csproj", "{C3ACB2EB-6337-49A4-81EA-38A5AA334689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shouts.Storage", "Shouts.Storage\Shouts.Storage.csproj", "{D8256CA2-857B-40A3-BC09-718670BB4CD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shouts.ShoutsCleaner", "Shouts.ShoutsCleaner\Shouts.ShoutsCleaner.csproj", "{2514CA99-E703-4F9C-8F5A-CAE34D39ED72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A19A8F77-C80F-4F37-9DAD-B5A5E974ADB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19A8F77-C80F-4F37-9DAD-B5A5E974ADB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19A8F77-C80F-4F37-9DAD-B5A5E974ADB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19A8F77-C80F-4F37-9DAD-B5A5E974ADB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3ACB2EB-6337-49A4-81EA-38A5AA334689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3ACB2EB-6337-49A4-81EA-38A5AA334689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3ACB2EB-6337-49A4-81EA-38A5AA334689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3ACB2EB-6337-49A4-81EA-38A5AA334689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8256CA2-857B-40A3-BC09-718670BB4CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8256CA2-857B-40A3-BC09-718670BB4CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8256CA2-857B-40A3-BC09-718670BB4CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8256CA2-857B-40A3-BC09-718670BB4CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2514CA99-E703-4F9C-8F5A-CAE34D39ED72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2514CA99-E703-4F9C-8F5A-CAE34D39ED72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2514CA99-E703-4F9C-8F5A-CAE34D39ED72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2514CA99-E703-4F9C-8F5A-CAE34D39ED72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
