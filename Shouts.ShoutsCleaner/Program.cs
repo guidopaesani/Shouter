@@ -28,6 +28,9 @@ namespace Shouts.ShoutsCleaner
                     case "-deleteaccount":
                         Deleteaccount(args[1]);
                         break;
+                    default:
+                        ErrorMessages();
+                        break;
                 }
             }
             catch (Exception)
